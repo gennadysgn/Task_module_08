@@ -16,7 +16,7 @@ def calculate_average(numbers):
         if type(i) is int:
             numbers_list.append(i)
     try:
-        return list(personal_sum(numbers))[0] / len(numbers_list)
+        return personal_sum(numbers)[0] / len(numbers_list)
     except ZeroDivisionError:
         return 0
 
